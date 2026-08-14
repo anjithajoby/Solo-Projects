@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Study Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>My Study Dashboard</h1>
+    <p id="welcomeMessage"></p>
+
+    <nav>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Tasks</a>
+            <a href="#">Profile</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+
+        <!-- Profile Card -->
+        <section class="card profile-card">
+            <h2>Anjitha Maria Joby</h2>
+            <p class="about">
+                I am a second-year Computer Science student. I like to read.</p>
+            <img src="italy.jpg" alt="Trip to Italy during summer" width="170">
+        </section>
+
+        <!-- Weekly Goals -->
+        <section class="card profile-card">
+            <h2>Weekly Goals</h2>
+
+            <button id="showGoalsBtn">Show Goals</button>
+            <ul id="goalList"></ul>
+        </section>
+
+        <!-- Study Status -->
+        <section class="card profile-card">
+            <h2>Study Status</h2>
+
+            <p class="status">Status:</p>
+
+            <p id="studyCount">Study sessions today: 0</p>
+
+            <button id="addBtn">Add Session</button>
+            <button id="resetBtn">Reset</button>
+        </section>
+
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 Anjitha Maria Joby | CS230</p>
+    <p>Last Updated: March 2026</p>
+    <p>This page is for study tracking.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

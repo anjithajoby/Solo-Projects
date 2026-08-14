@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* timer button */
+nav {
+    padding:10px;
+    /*margin: 10px;*/
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+
+
+
+/* Page background */
+body {
+    background: lightblue;
+    /*font-family: 'Roboto' , sans-serif; */
+    color: white;
+   
+}
+
+/* Apple image centred */
+.image {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    
+}
+
+/* Apple  with timer  inside */
+.insideapple {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Timer in apple */
+#timer {
+    position: absolute;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    color:white;
+    text-align: center;
+}
+
+/* Timer hover effect */
+#timer:hover{
+    color:yellow;
+}
+
+/* timer is below 15 seconds */
+.warning{
+    color: red;
+    background: rgba(141, 0, 249, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Nav button */
+#navtimer{
+     font-family: 'Roboto' , sans-serif;
+     color: white; 
+     background: pink;
+     border: 2px solid black;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+     cursor: pointer;
+     
+}
+
+/*Hover effect  nav button */
+#navtimer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+}
+
+
+#start {
+   font-family: 'Roboto' , sans-serif;
+    color: white;
+    background: green;
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#start:hover {
+    transform: scale(1.05);
+    border: 2px solid black;
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+}
+
+
+#stop {
+   font-family: 'Roboto' , sans-serif;
+    color: white;
+    background: red;
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#stop:hover {
+    transform: scale(1.05);
+    border: 2px solid black;
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+}
+
+#pause {
+   font-family: 'Roboto' , sans-serif;
+    color: white;
+    background: orange;
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#pause:hover {
+    transform: scale(1.05);
+    border: 2px solid black;
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+}
+
+
+/* three buttons centred */
+.threebuttons{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    gap: 12px;
+    padding: 10px;
+}
+ 
+/* button not in use*/
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
