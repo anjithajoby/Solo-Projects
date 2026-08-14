@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #f99dc8;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #addaf0;
+}
+
+nav h1 {
+  color: #fcf8f8;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+/* underline hover */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #3200f8;
+  
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #3200f8;
+}
+
+/* container */
+.container {
+  padding: 30px;
+  flex:1;
+}
+
+.home-section{
+  margin-bottom: 30px;
+}
+
+.home-section h2{
+  margin-bottom: 10px;
+}
+
+/* forms */
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.form-container{
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solic #ccc;
+  border-radius: 5px;
+}
+
+/* main buttons */
+button {
+  padding: 10px 15px;
+  background: #fce685;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+
+button:hover {
+  background: #f7d84c;
+  transform: scale(1.03);
+}
+
+section {
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+/* table */
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+tr {
+  background: #e097f7;
+}
+
+th, td {
+  padding: 14px;
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+  border-right: 1px solid rgba(0,0,0,0.25);
+  text-align: left;
+}
+
+th:last-child,
+td:last-child {
+  border-right: none;
+}
+
+th {
+  background: #bff89e;
+  color: rgb(255, 255, 255);
+}
+
+/* table buttons */
+td button {
+  background: #fce685;
+  color: white;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+td button:hover {
+  background: #555;
+}
+
+/*footer*/
+.footer{
+text-align: center;
+padding: 15px;
+background: #addaf0;
+font-size: 13px;
+}

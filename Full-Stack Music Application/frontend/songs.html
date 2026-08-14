@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Songs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <h1>Music Library</h1>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="artists.html">Artists</a>
+        <a href="albums.html">Albums</a>
+        <a href="songs.html">Songs</a>
+    </div>
+</nav>
+
+<div class="container">
+
+<h2>Songs</h2>
+
+<div class="form-container">
+    <input id="songName" placeholder="Song Name">
+    <input id="songYear" placeholder="Release Year">
+    <input id="songAlbumId" placeholder="Album ID">
+    <button onclick="addSong()">Add Song</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Song Name</th>
+            <th>Year</th>
+            <th>Album ID</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody id="songsTable"></tbody>
+</table>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
